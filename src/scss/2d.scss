@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    background: rgb(126, 120, 114);
+  }
+  .item {
+    width: 100px;
+    height: 100px;
+    transform: translate(0, 0);
+    margin: 20px;
+    position: relative;
+  left: 0;
+//    animation: move 4s infinite ease-in-out;
+    animation-delay: 1s;
+  }
+  .spany {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+   // border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+    //-webkit-animation: run 2s infinite ease-in-out;
+    animation: run 1s infinite linear;
+  }
+  .roling {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    background: rgb(253, 218, 79);
+    border-radius: 50%;
+    animation: rol 4s infinite  linear;
+
+
+  }
+
+  .squere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+    margin: 0px;
+    left: 0%;
+    top: 0%; 
+  
+  &:nth-child(1) {
+    background: rgba(253, 218, 79, 0);}
+    transform: translate(0%, 100%);
+    
+
+&:nth-child(2) {
+    
+    background: rgba(248, 120, 73, 0);
+    transform: translate(0, -100%);
+   
+}
+
+&:nth-child(3) {
+    background: rgba(251, 170, 72, 0);
+    transform: translate(100% ,0%) ;
+    
+}
+&:nth-child(4) {
+  background: rgba(251, 170, 72, 0);
+  transform: translate(-100%, 0%) ;
+  
+  }
+
+}
+
+.trik{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+  animation: rols 4s infinite linear;
+  background: #FBAB48;
+}
+
+  .one {
+    background: rgb(243, 34, 34);
+    //-webkit-animation-delay: 1.5s;
+    animation-delay: 0.75s;
+  }
+  .two {
+    background: #F0653E;
+   // -webkit-animation-delay: 1s;
+    animation-delay: 0.5s;
+  }
+  .three {
+    background: #B9C0C0;
+  //  -webkit-animation-delay: 0.5s;
+    animation-delay: 0.25s;
+  }
+  .four {
+    background: #8F7473;
+  }
+  
+  @keyframes run {
+    0% {
+      transform: translate(0%);
+     // border-radius: 50%;
+    }
+    25% {
+      transform: translate(150%) scale(0.5); 
+  //    border-radius: 0%;
+    }
+    50% {
+      transform: translate(150%, 150%) ;
+    //  border-radius: 50%; 
+    }
+    75% {
+      transform: translate(0%, 150%) scale(0.5); 
+    //  border-radius: 0%;
+    }
+  }
+
+  @keyframes rol {
+    from  { transform:  rotate(0deg)  }
+    25%   { transform:  rotate(90deg)   }
+    50%   { transform:  rotate(180deg)   }
+    75%   { transform:  rotate(270deg)   }
+    to    { transform:  rotate(360deg)   }
+  }
+
+  @keyframes rols{
+    from  { transform:rotate(0deg);border-radius: 0%;}
+    12%   {border-radius: 50%;}
+    25%   { transform: rotate(90deg);border-radius: 0%;}
+    38%   { border-radius: 50%;}
+    50%   { transform: rotate(180deg);border-radius: 0%;}
+    63%   { border-radius: 50%;}
+    75%   { transform:  rotate(270deg);border-radius: 0%;}
+    87%   { border-radius: 50%;}
+    to    { transform:rotate(360deg);border-radius: 0%;}
+  }
+  @keyframes move{
+    0% {
+      transform: translate(0, 0);
+     // border-radius: 50%;
+    }
+    6% {
+      transform: translate(50%, 0);
+  //    border-radius: 0%;
+    }
+    12% {
+      transform: translate(100%,0) ;
+    //  border-radius: 50%; 
+    }
+    19% {
+      transform: translate(150%, 0) ;
+    //  border-radius: 0%;
+    }
+    25% {
+      transform: translate(200%, 0);
+     // border-radius: 50%;
+    }
+    31% {
+      transform: translate(250%, 0);
+  //    border-radius: 0%;
+    }
+    38% {
+      transform: translate(300%,0) ;
+    //  border-radius: 50%; 
+    }
+    44% {
+      transform: translate(350%, 0) ;
+    //  border-radius: 0%;
+    }
+    50% {
+      transform: translate(400%, 0);
+     // border-radius: 50%;
+    }
+    57% {
+      transform: translate(450%, 0);
+  //    border-radius: 0%;
+    }
+    63% {
+      transform: translate(500%,0) ;
+    //  border-radius: 50%; 
+    }
+    69% {
+      transform: translate(550%, 0) ;
+    //  border-radius: 0%;
+    }
+    76% {
+      transform: translate(600%, 0);
+     // border-radius: 50%;
+    }
+    82% {
+      transform: translate(650%, 0);
+  //    border-radius: 0%;
+    }
+    88% {
+      transform: translate(700%,0) ;
+    //  border-radius: 50%; 
+    }
+    95% {
+      transform: translate(750%, 0) ;
+    //  border-radius: 0%;
+    }
+  }
